@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="images/logo/Reservia@3x.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Reservia</title>
 </head>
 <body>
-    <div id="main">
+    <div id="container">
         <header class="border">
             <div id="header" class="border_red">
                 <img src="images/logo/reservia.svg" alt="Logo Reservia" id="logo" class="border_blue">
@@ -23,17 +26,22 @@
                 </ul>
             </nav>
         </header>
-        <body class="border">
+        <main class="border">
             <section id="search_area" class="border_red">
                 <form method="post" action="traitement.php" id="searchbar" class="border_blue">
                     <p id="searchbar" class="border_blue">
-                        <label><img src="images/icons/map-marker-alt-solid.svg" style="width:20px" alt=""></label><input type="text" name="destination"><label>Rechercher</label>
+                        <label><img src="images/icons/map-marker-alt-solid.svg" style="width:10px" alt=""></label><input type="text" name="destination" placeholder="Marseille, France"><input type="submit" value="Rechercher">
                     </p>
                 </form>
                 <form action="" id="filters" class="border_blue">
-                    <p id="filters" class="border_blue">
-                        <!--add filters bar image-->    
-                    </p>
+                    <!--A MODIFIER !!!-->
+                    <div id="filters" class="border_blue">
+                        <div id="buttons">Filtres</div>
+                        <div id="buttons">Economique</div>
+                        <div id="buttons">Familiale</div>
+                        <div id="buttons">Romantique</div>
+                        <div id="buttons">Animaux autorisés</div>
+                    </div>
                 </form>
             </section>
             <section id="search_results" class="border_red">
@@ -129,7 +137,7 @@
                     </div>
                 </div>
             </section>
-        </body>
+        </main>
         <footer class="border">
             <div id="about" class="border_red">
                 <h3 class="border_blue">A propos</h3>
