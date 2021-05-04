@@ -17,12 +17,17 @@ header {
 
 .logo img {
     width: auto;
+    padding-top: 20px;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
     gap: 3em;
+}
+
+.navbar li {
+    padding: 20px;
 }
 
 header .suscribe_mobile {
@@ -32,6 +37,7 @@ header .suscribe_mobile {
 header a:link {
     text-decoration: none;
     color: black;
+    
 }
 header a:visited {
     text-decoration: none;
@@ -45,10 +51,14 @@ header a.suscribe__link:visited {
     color: dodgerblue;
     font-weight: bold;
 }
-header a:hover {
-    color: dodgerblue;
+header li:hover {
     border-top: dodgerblue solid 1px;
+    color: dodgerblue;
 }
+
+
+
+
 
 
 
@@ -67,7 +77,7 @@ header a:hover {
     
     header .suscribe_mobile {
         display: block;
-        padding: 1em;
+        padding-top: 30px;
     }
     header a:link {
         text-decoration: none;
@@ -87,8 +97,14 @@ header a:hover {
     }
     header a:hover {
         color: dodgerblue;
+    }
+
+    Header li:hover{
+        color: dodgerblue;
         border-bottom: dodgerblue solid 1px;
         border-top: none;
     }
-
+    .suscribe_mobile:hover {
+        border-bottom: dodgerblue solid 1px;
+    }
 }
