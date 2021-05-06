@@ -20,14 +20,19 @@ header {
     padding-top: 20px;
 }
 
+
 .navbar ul {
     display: flex;
     list-style: none;
-    gap: 3em;
+    margin: 0;
+    justify-content: space-between;
 }
 
 .navbar li {
-    padding: 20px;
+    padding: 30px;
+    border: transparent solid 3px;
+    width: auto;
+    text-align: center;
 }
 
 header .suscribe_mobile {
@@ -52,8 +57,8 @@ header a.suscribe__link:visited {
     font-weight: bold;
 }
 header li:hover {
-    border-top: dodgerblue solid 1px;
-    color: dodgerblue;
+    border-top: dodgerblue solid 3px;
+    
 }
 main{
     padding: 0 20px;
@@ -67,8 +72,11 @@ main{
 
 
 @media screen and (max-width: 768px) {
+    
     header {
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
     header ul {
         border-bottom: gainsboro solid 3px;
@@ -80,6 +88,18 @@ main{
         display: flex;
         justify-content: space-between;
         align-content: center
+    }
+    .navbar ul {
+        margin:0;
+        padding: 0;
+        
+    }
+    .navbar li {
+        width: 50%;
+        text-align: center;
+        border: transparent solid 3px;
+        padding: 30px 0;
+
     }
     
     header .suscribe_mobile {
