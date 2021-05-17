@@ -76,7 +76,7 @@ main{
 
 .filters__btn__title {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     font-weight: bolder;
 }
 
@@ -183,6 +183,12 @@ main{
     .filters .btns{
         padding: 0;
     }
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
     .filters__btn{
         display: flex;
         flex-direction: column;
@@ -196,7 +202,7 @@ main{
         flex-wrap: wrap;
     }
     .filters__btn__title {
-        align-self: center;
+        align-self: flex-start;
         flex-grow: 1;
     }
 }
