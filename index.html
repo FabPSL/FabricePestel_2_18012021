@@ -18,7 +18,7 @@
             <div class="logo">
                 <img src="./images/logo/logo-reservia.svg" alt="Logo Reservia">
                 <div class="suscribe_mobile">
-                    <a class="suscribe__link" href="#">S'inscrire</a>
+                    <a class="suscribe__mobile__link" href="#">S'inscrire</a>
                 </div>
             </div>
             <nav class="navbar">
@@ -39,9 +39,13 @@
             </div>
            
                 <section class="search">
-                    <form method="post" action="traitement.php" class="searchbar">
-                        <p class="searchbar__location"><label><i class="fas fa-map-marker-alt"></i> </label><input type="text" name="destination" placeholder="Marseille, France"><input type="submit" value="Rechercher">
-                        </p>
+                    <form class="searchbar" action="traitement.php" >
+                        <label>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </label>
+                        <input class="destination" type="text" name="destination" placeholder="Marseille, France">
+                        <button class="submit" type="submit">Rechercher</button>
+                        <button class="submit__mobile" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                     <div class="filters">
                         <div class="filters__btn__title">Filtres</div>

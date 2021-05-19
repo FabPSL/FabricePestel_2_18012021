@@ -30,7 +30,8 @@ header {
 
 .navbar li {
     padding: 30px;
-    border: transparent solid 3px;
+    border-top: transparent solid 3px;
+    border-bottom: transparent solid 3px;
     width: auto;
     text-align: center;
 }
@@ -64,9 +65,32 @@ main{
     padding: 0 20px;
 }
 .intro__title{
-    font-size: 20px;
+    font-size: 22px;
 }
 
+.intro__p {
+    font-size: 16px;
+}
+
+.searchbar {
+    padding: 30px 0;
+}
+
+label i {
+    border: lightgray solid 1px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: lightgray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
 .filters__btn {
     display: flex;
     flex-direction: row;
@@ -90,9 +114,11 @@ main{
 
 .btn {
     font-weight: bolder;
-    padding:  0 30px 0 0;
+    font-size: 17px;
+    padding:  0 20px 0 0;
     border: lightgray solid 2px;
     border-radius: 50px;
+
 }
 
 .btn i {
@@ -125,16 +151,20 @@ main{
         margin: 0;
         padding: 0;
     }
-    header ul {
-        border-bottom: gainsboro solid 3px;
-    }
+    
     header .navbar ul li.suscribe {
         display: none;
     }
     header .logo {
         display: flex;
         justify-content: space-between;
-        align-content: center
+        align-content: center;
+        padding: 0;
+        width: auto;
+    }
+
+    .logo {
+        padding-left: 10px;
     }
     .navbar ul {
         margin:0;
@@ -144,15 +174,19 @@ main{
     .navbar li {
         width: 50%;
         text-align: center;
-        border: transparent solid 3px;
+        border-bottom-color: lightgray;
         padding: 30px 0;
+        
 
     }
     
     header .suscribe_mobile {
         display: block;
-        padding-top: 30px;
-        border: transparent solid 3px;
+        padding: 30px 0 0 10px;
+        margin-right: 0;
+        border-top: transparent solid 3px;
+        width: 50%;
+        text-align: right;
     }
     header a:link {
         text-decoration: none;
@@ -162,11 +196,14 @@ main{
         text-decoration: none;
         color: black;
     }
-    header a.suscribe__link:link {
+    .suscribe__mobile__link {
+        padding-right: 10px;
+    }
+    header a.suscribe__mobile__link:link {
         color:dodgerblue;
         font-weight: bold;
     }
-    header a.suscribe__link:visited {
+    header a.suscribe__mobile__link:visited {
         color: dodgerblue;
         font-weight: bold;
     }
@@ -175,7 +212,7 @@ main{
 
     }
 
-    Header li:hover{
+    .navbar li:hover{
         color: dodgerblue;
         border-bottom: dodgerblue solid 3px;
         border-top: none;
