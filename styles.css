@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -185,13 +186,21 @@ label i {
     padding: 10px;
 }
 .destination {
-    width: 200px;
+    width: 220px;
     height: 40px;
     text-align: center;
+    border: none;
     border-top: #F2F2F2 solid 2px;
     border-bottom: #F2F2F2 solid 2px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    text-align: justify;
     outline: none;
+    color: #000;
+    padding-left: 10px;
 }
+
+
 
 .submit {
     width: auto;
@@ -209,10 +218,7 @@ label i {
     display: none;
 }
 
-footer {
-    background: #F2F2F2;
-    
-}
+
 
 
 
@@ -294,11 +300,9 @@ footer {
     .navbar li:hover{
         color: #0065FC;
         border-bottom: #0065FC solid 3px;
-        border-top: none;
+        border-top: transparent solid 3px;
     }
-    .suscribe_mobile:hover {
-        border-top: #0065FC solid 3px;
-    }
+    
     .search {
         display: flex;
         flex-direction: column;
@@ -307,11 +311,11 @@ footer {
     .filters .btns{
         padding: 0;
     }
-.filters {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+    .filters {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
     .filters__btn{
         display: flex;
@@ -324,6 +328,7 @@ footer {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
+        
     }
     .filters__btn__title {
         align-self: flex-start;
@@ -343,6 +348,6 @@ footer {
         color: white;
         border-radius: 10px;
         padding: 10px;
-
     }
+    
 }
