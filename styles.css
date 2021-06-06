@@ -1,7 +1,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 * {
@@ -37,6 +37,10 @@ header {
     text-align: center;
 }
 
+.navbar .suscribe:hover {
+    border-color: transparent;
+}
+
 header .suscribe_mobile {
     display: none;
 }
@@ -58,9 +62,11 @@ header a.suscribe__link:visited {
     color: #0065FC;
     font-weight: bold;
 }
+header a:hover{
+    color: #0065FC;
+}
 header li:hover {
     border-top: #0065FC solid 3px;
-    
 }
 main{
     padding: 0 20px;
@@ -90,7 +96,7 @@ label i {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 .filters__btn {
     display: flex;
@@ -118,17 +124,24 @@ label i {
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    height: 40px;
     font-weight: bolder;
     font-size: 17px;
-    padding:  0 20px 0 0;
+    padding:  0 20px 0 40px;
     border: #D9D9D9 solid 2px;
     border-radius: 50px;
+    position: relative;
 
 }
 
 .btn__icone i{
     display: flex;
     justify-content: center;
+    height: 40px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    
 }
 
 .btn i {
@@ -165,6 +178,7 @@ label i {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 .filters__info__text {
@@ -186,7 +200,7 @@ label i {
     padding: 10px;
 }
 .destination {
-    width: 220px;
+    width: 240px;    
     height: 40px;
     text-align: center;
     border: none;
@@ -218,7 +232,22 @@ label i {
     display: none;
 }
 
+.result {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 150px;
+    grid-gap: 1px;
+    background-color: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+}
 
+.result img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
 
 
@@ -244,7 +273,7 @@ label i {
         display: flex;
         justify-content: space-between;
         align-content: center;
-        padding: 0;
+        padding: 0 0 0 10px;
         width: auto;
     }
 
@@ -302,19 +331,22 @@ label i {
         border-bottom: #0065FC solid 3px;
         border-top: transparent solid 3px;
     }
-    
+        
     .search {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
+
+    
+
     .filters .btns{
         padding: 0;
     }
     .filters {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
     }
 
     .filters__btn{
@@ -348,6 +380,14 @@ label i {
         color: white;
         border-radius: 10px;
         padding: 10px;
+        position: absolute;
+        right: 0;
+        left: 292px;
     }
+
+    .filters__info {
+        align-items: baseline;
+    }
+    
     
 }
