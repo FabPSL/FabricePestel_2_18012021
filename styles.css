@@ -232,19 +232,35 @@ label i {
     display: none;
 }
 
-.result {
-    display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 150px;
-    grid-gap: 1px;
-    background-color: #FFF;
+.local {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.local__btns {
+    display: inline-grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 30px;
     border-radius: 20px;
     overflow: hidden;
     padding: 5px;
+    font-size: 13px;
+}
+
+.result {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .result img {
-    width: 100%;
+    width: 180px;
+    height: 75px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
