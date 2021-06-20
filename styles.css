@@ -248,6 +248,11 @@ label i {
     border-radius: 10px;
 }
 
+.local__ttl .more {
+    margin: 0 20px;
+
+}
+
 .populars {
     display: flex;
     flex-direction: column;
@@ -258,19 +263,22 @@ label i {
 }
 
 .local__btns {
-    display: inline-grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-gap: 30px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 20px;
     overflow: hidden;
     padding: 5px;
     font-size: 13px;
 }
 
 .popular__btns {
-    display: grid;
-    grid-template-columns: 350px;
-    grid-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     border-radius: 10px;
     overflow: hidden;
     padding: 5px;
@@ -278,19 +286,38 @@ label i {
 }
 
 .result {
+    width: 220px;
     background-color: #FFF;
     padding: 5px;
+    margin: 20px 0;
     border-radius: 10px;
 }
 
+.local {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    padding: 20px 40px;
+}
+
+.populars {
+    width: 30%;
+}
+
 .popular {
+    width: 350;
+    height: 130px;
     display: flex;
     flex-direction: row;
     background-color: #FFF;
     padding: 5px;
+    margin: 20px 0;
     border-radius: 10px;
     gap: 10px;
 }
+
+
 
 .popular__txt {
     display: flex;
@@ -299,21 +326,28 @@ label i {
     
 }
 
+.popular__txt h4 {
+    margin: 0;
+}
+
 .result img {
-    width: 190px;
-    height: 75px;
+    width: 100%;
+    height: 100px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .popular img {
-    width: 145px;
-    height: 75px;
+    width: 40%;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
 
+.result__rating {
+    color: #0065FC;
 }
 
 
