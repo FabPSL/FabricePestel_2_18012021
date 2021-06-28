@@ -1,14 +1,15 @@
 body {
 	font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
-    max-width: 1300px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +26,7 @@ header {
 .navbar ul {
     display: flex;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -80,18 +81,60 @@ main{
 }
 
 .searchbar {
-    padding: 30px 0;
+    max-width: 760px;
+    width: 375px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 30px 0;
+    border: #F2F2F2 solid 1px;
+    border-radius: 10px;
+    position: relative;
 }
 
 label i {
-    border: #F2F2F2 solid 1px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    background-color: #F2F2F2;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     text-align: center;
+    border: #F2F2F2 solid 2px;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
 }
+
+.destination {
+    width: 100%;
+    height: 38px;
+    border: none;
+    text-align: justify;
+    padding-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    outline: none;
+    color: #000;
+}
+
+.submit {
+    width: auto;
+    height: 40px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    border: #0065FC solid 2px;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.submit__mobile {
+    display: none;
+}
+
 .filters {
     display: flex;
     justify-content: flex-start;
@@ -185,52 +228,9 @@ label i {
     font-size: 15px;
 }
 
-form {
-    display: flex;
-}
-
-label i {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border: #F2F2F2 solid 2px;
-    background-color: #F2F2F2;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    padding: 10px;
-}
-.destination {
-    width: 240px;    
-    height: 40px;
-    text-align: center;
-    border: none;
-    border-top: #F2F2F2 solid 2px;
-    border-bottom: #F2F2F2 solid 2px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    text-align: justify;
-    outline: none;
-    color: #000;
-    padding-left: 10px;
-}
 
 
 
-.submit {
-    width: auto;
-    height: 40px;
-    text-align: center;
-    border: #0065FC solid 2px;
-    background-color: #0065FC;
-    color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
-}
-
-.submit__mobile {
-    display: none;
-}
 
 .results {
     display: flex;
@@ -306,10 +306,11 @@ label i {
 
 .populars {
     width: 30%;
+    min-width: 375px;
 }
 
 .popular {
-    width: 350;
+    width: 330px;
     height: 140px;
     display: flex;
     flex-direction: row;
@@ -363,13 +364,46 @@ label i {
 
 
 
+footer {
+    width: 100%;
+    background-color: #D9D9D9;
+    padding: 0;
+    margin: 0;
+}
 
+.footer__section {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer__links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
+.footer__links ul li {
+    padding-bottom: 10px;
+}
 
 
 
 @media screen and (max-width: 768px) {
     
+.container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
     header {
         flex-direction: column;
         margin: 0;
@@ -383,12 +417,16 @@ label i {
         display: flex;
         justify-content: space-between;
         align-content: center;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 0px;
         width: auto;
     }
 
     .logo {
         padding-left: 10px;
+    }
+
+    nav {
+        width: 100%;
     }
     .navbar ul {
         margin:0;
@@ -406,7 +444,7 @@ label i {
     
     header .suscribe_mobile {
         display: block;
-        padding: 30px 0 0 10px;
+        padding: 30px 10px 0 10px;
         margin-right: 0;
         border-top: transparent solid 3px;
         width: 50%;
@@ -442,13 +480,29 @@ label i {
         border-top: transparent solid 3px;
     }
         
-    .search {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    
+
+    main {
+        padding: 0;
     }
 
-    
+    .searchbar {
+        width: 100%;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    .submit__mobile {
+        display: inline;
+        width: 38px;
+        height: 38px;
+        background-color: #0065FC;
+        color: white;
+        border: #0065FC solid 1px;
+        border-radius: 10px;
+    }
 
     .filters .btns{
         padding: 0;
@@ -477,23 +531,7 @@ label i {
         flex-grow: 1;
     }
 
-    .submit {
-        display: none;
-    }
-    .submit__mobile {
-        display: inline;
-        width: auto;
-        height: 40px;
-        text-align: center;
-        border: #0065FC solid 2px;
-        background-color: #0065FC;
-        color: white;
-        border-radius: 10px;
-        padding: 10px;
-        position: absolute;
-        right: 0;
-        left: 292px;
-    }
+    
 
     .filters__info {
         align-items: baseline;
@@ -506,6 +544,8 @@ label i {
     
     .populars {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .local {
@@ -517,5 +557,11 @@ label i {
     .local__btns {
         width: 350px;
         padding: 0;
+    }
+
+    .footer__section {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 20px;
     }
 }
