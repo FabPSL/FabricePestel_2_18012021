@@ -671,6 +671,10 @@ body {
         border-radius: 0;
     }
 
+    .populars__ttl {
+        margin: 0 20px;
+    }
+
     .popular__btns {
         align-self: center;
     }
@@ -684,7 +688,7 @@ body {
     }
 
     .local__ttl {
-        margin: 0 10px;
+        margin: 0 20px;
         justify-self: left;
     }
 
