@@ -457,7 +457,7 @@ footer {
     margin: 0;
 }
 
-.footer__section {
+.footer__div {
     width: 75%;
     padding: 20px;
     display: flex;
@@ -741,7 +741,7 @@ body {
         background-color: #FFF;
         padding: 5px;
         gap: 10px;
-        box-shadow: 0 2px 20px rgb(0 0 0 / 18%);
+        box-shadow: 0 2px 5px rgb(0 0 0 / 18%);
     }
 
     .activity img {
