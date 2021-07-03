@@ -233,11 +233,11 @@ label i {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .local {
-    width: 70%;
+    max-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -245,7 +245,7 @@ label i {
     gap: 30px;
     background-color: #F2F2F2;
     border-radius: 10px;
-    padding: 20px 40px;
+    padding: 20px;
 }
 
 .local__ttl {
@@ -261,12 +261,12 @@ label i {
 .local__btns {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0 5px;
+    padding: 0;
     font-size: 13px;
 }
 
@@ -311,11 +311,10 @@ label i {
 }
 
 .populars {
-    max-width: 390px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: max-content;
     background-color: #F2F2F2;
     padding: 20px;
     border-radius: 10px;
@@ -342,7 +341,6 @@ label i {
     background-color: #FFF;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 5px grey;
     gap: 10px;
 }
 
@@ -357,6 +355,7 @@ label i {
 .popular__btns {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
     border-radius: 10px;
     overflow: hidden;
@@ -403,11 +402,11 @@ label i {
 .activities__btns {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     overflow: hidden;
-    padding: 0;
+    padding: 5px 0;
     font-size: 13px;
 }
 
@@ -417,7 +416,7 @@ label i {
     max-height: 500px;
     padding: 5px;
     border-radius: 10px;
-    border: #F2F2F2 solid 1px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 18%);
 }
 
 .activity__split__1 , .activity__split__2{
@@ -453,15 +452,14 @@ label i {
 
 footer {
     width: 100%;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
     padding: 0;
     margin: 0;
 }
 
 .footer__section {
     width: 75%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -481,6 +479,28 @@ footer {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width:1200px) {
+
+    .results {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .popular__btns {
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .result {
+        width: 330px;
+        height: 200px;
+        background-color: #FFF;
+        padding: 5px;
+        gap: 10px;
+        }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -570,11 +590,16 @@ body {
     
 
     main {
+        padding: 0;
+    }
+
+    .intro {
         padding: 0 5px;
     }
 
     .searchbar {
         width: 100%;
+        padding: 0 5px;
     }
 
     .submit {
@@ -598,6 +623,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 0 5px;
     }
 
     .filters__btn{
@@ -622,6 +648,7 @@ body {
 
     .filters__info {
         align-items: baseline;
+        padding: 20px 5px;
     }
 
     
@@ -635,6 +662,7 @@ body {
         max-width: 768px;
         width: 100%;
         margin: auto 0;
+        padding: 10px 0 20px;
         border-radius: 0;
     }
 
@@ -646,12 +674,12 @@ body {
         max-width: 768px;
         width: 100%;
         margin: auto 0;
-        padding: 0 20px;
+        padding: 0;
         background-color: #FFF;
     }
 
     .local__ttl {
-        margin: 0;
+        margin: 0 10px;
         justify-self: left;
     }
 
@@ -659,9 +687,10 @@ body {
         max-width: 390px;
         flex-direction: column;
         align-self: center;
-        gap: 30px;
+        gap: 10px;
         width: max-content;
         border-radius: 10px;
+        padding: 5px 0;
     }
 
     .result {
@@ -670,8 +699,7 @@ body {
         background-color: #FFF;
         padding: 5px;
         gap: 10px;
-        border: #F2F2F2 solid 1px;
-        box-shadow: 10px black;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 18%);
     }
 
     .result img {
@@ -681,17 +709,20 @@ body {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+
+    .more {
+        padding: 0 10px;
+    }
     
     .activities {
-        max-width: 768px;
-        width: 100%;
+        max-width: 100%;
         margin: auto 0;
-        padding: 20px 20px;
+        padding: 20px 0;
         background-color: #FFF;
     }
 
     .activities__ttl {
-        margin: 0;
+        margin: 0 20px;
         justify-self: left;
     }
 
@@ -699,7 +730,7 @@ body {
         max-width: 390px;
         flex-direction: column;
         align-self: center;
-        gap: 30px;
+        gap: 10px;
         width: max-content;
         border-radius: 10px;
     }
@@ -710,8 +741,7 @@ body {
         background-color: #FFF;
         padding: 5px;
         gap: 10px;
-        border: #F2F2F2 solid 1px;
-        box-shadow: 10px black;
+        box-shadow: 0 2px 20px rgb(0 0 0 / 18%);
     }
 
     .activity img {
