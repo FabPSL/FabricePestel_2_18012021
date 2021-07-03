@@ -457,7 +457,7 @@ footer {
     margin: 0;
 }
 
-.footer__div {
+.footer__section {
     width: 75%;
     padding: 20px;
     display: flex;
