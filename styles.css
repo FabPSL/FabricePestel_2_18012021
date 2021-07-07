@@ -339,6 +339,16 @@ label i {
     color: black;
 }
 
+.more a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+.more a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
 .populars {
     max-width: 100%;
     display: flex;
