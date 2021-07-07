@@ -1,6 +1,6 @@
-/*media query 1200px start line 487*/
-/*media query 1024px start line 510*/
-/*media query 768px start line 516*/
+/*media query 1200px start line 537*/
+/*media query 1024px start line 560*/
+/*media query 768px start line 566*/
 
 /*html line 15*/
 body {
@@ -204,6 +204,16 @@ label i {
     padding: 10px;
 }
 
+.btn a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.btn a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .filters__info i{
     width: 20px;
     height: 20px;
@@ -233,7 +243,7 @@ label i {
 .filters__info__text {
     font-size: 15px;
 }
-/*html line 62*/
+/*html line 70*/
 .results {
     display: flex;
     flex-direction: row;
@@ -315,6 +325,16 @@ label i {
     margin: 0 5px 5px;
 }
 
+.result a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.result a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .populars {
     max-width: 100%;
     display: flex;
@@ -391,7 +411,17 @@ label i {
     color: #0065FC;
     margin: 0 5px 5px;
 }
-/*html line 169*/
+
+.popular__btns a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.popular__btns a:visited {
+    text-decoration: none;
+    color: black;
+}
+/*html line 195*/
 .activities {
     width: 100%;
     display: flex;
@@ -452,7 +482,17 @@ label i {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-/*html line 206*/
+
+.activities__btns a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.activities__btns a:visited {
+    text-decoration: none;
+    color: black;
+}
+/*html line 244*/
 footer {
     width: 100%;
     background-color: #F2F2F2;
@@ -482,6 +522,16 @@ footer {
 
 .footer__links ul li {
     padding-bottom: 10px;
+}
+
+.footer__links a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__links a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width:1200px) {
