@@ -1,3 +1,8 @@
+/*media query 1200px start line 487*/
+/*media query 1024px start line 510*/
+/*media query 768px start line 516*/
+
+/*html line 15*/
 body {
 	font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -8,21 +13,20 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0 auto; /*allows to center the page horizontally*/
     max-width: 1300px;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-
 }
 
 .logo img {
     width: auto;
     padding-top: 20px;
 }
-
 
 .navbar ul {
     display: flex;
@@ -50,16 +54,18 @@ header .suscribe_mobile {
 header a:link {
     text-decoration: none;
     color: black;
-    
 }
+
 header a:visited {
     text-decoration: none;
     color: black;
 }
+
 header a.suscribe__link:link {
     color: #0065FC;
     font-weight: bold;
 }
+
 header a.suscribe__link:visited {
     color: #0065FC;
     font-weight: bold;
@@ -70,9 +76,11 @@ header a:hover{
 header li:hover {
     border-top: #0065FC solid 3px;
 }
+/*html line 35*/
 main{
     padding: 0 20px;
 }
+
 .intro__title{
     font-size: 22px;
 }
@@ -135,13 +143,14 @@ label i {
 .submit__mobile {
     display: none;
 }
-
+/*html line 49*/
 .filters {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
 }
+
 .filters__btn {
     display: flex;
     flex-direction: row;
@@ -156,7 +165,6 @@ label i {
 }
 
 .btns{
-    
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -175,7 +183,6 @@ label i {
     border: #D9D9D9 solid 2px;
     border-radius: 50px;
     position: relative;
-
 }
 
 .btn__icone i{
@@ -185,7 +192,6 @@ label i {
     position: absolute;
     top: -2px;
     left: -2px;
-    
 }
 
 .btn i {
@@ -197,7 +203,6 @@ label i {
     border-radius: 50%;
     padding: 10px;
 }
-
 
 .filters__info i{
     width: 20px;
@@ -228,7 +233,7 @@ label i {
 .filters__info__text {
     font-size: 15px;
 }
-
+/*html line 62*/
 .results {
     display: flex;
     flex-direction: row;
@@ -280,7 +285,7 @@ label i {
 .result img {
     width: 100%;
     height: 130px;
-    object-fit: cover;
+    object-fit: cover;/*maintain its aspect ratio while filling the element’s entire content box*/
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -386,7 +391,7 @@ label i {
     color: #0065FC;
     margin: 0 5px 5px;
 }
-
+/*html line 169*/
 .activities {
     width: 100%;
     display: flex;
@@ -409,7 +414,6 @@ label i {
     padding: 5px 0;
     font-size: 13px;
 }
-
 
 .activity {
     width: 300px;
@@ -448,8 +452,7 @@ label i {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
-
+/*html line 206*/
 footer {
     width: 100%;
     background-color: #F2F2F2;
@@ -465,11 +468,13 @@ footer {
     justify-content: space-between;
     gap: 20px;
 }
+
 .footer__links {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .footer__links ul {
     list-style-type: none;
     padding-left: 0;
@@ -510,9 +515,9 @@ footer {
 
 @media screen and (max-width: 768px) {
     
-body {
-    margin: 0;
-}
+    body {
+        margin: 0;
+    }
 
     .container {
         width: 100%;
@@ -529,6 +534,7 @@ body {
     header .navbar ul li.suscribe {
         display: none;
     }
+    
     header .logo {
         display: flex;
         justify-content: space-between;
@@ -540,18 +546,17 @@ body {
     nav {
         width: 100%;
     }
+    
     .navbar ul {
         margin:0;
         padding: 0;
-        
     }
+    
     .navbar li {
         width: 50%;
         text-align: center;
         border-bottom-color: #F2F2F2;
         padding: 30px 0;
-        
-
     }
     
     header .suscribe_mobile {
@@ -562,28 +567,32 @@ body {
         width: 50%;
         text-align: right;
     }
+    
     header a:link {
         text-decoration: none;
         color: black;
     }
+    
     header a:visited {
         text-decoration: none;
         color: black;
     }
+    
     .suscribe__mobile__link {
         padding-right: 10px;
     }
+    
     header a.suscribe__mobile__link:link {
         color:#0065FC;
         font-weight: bold;
     }
+    
     header a.suscribe__mobile__link:visited {
         color: #0065FC;
         font-weight: bold;
     }
     header a:hover {
         color: #0065FC;
-
     }
 
     .navbar li:hover{
@@ -591,9 +600,7 @@ body {
         border-bottom: #0065FC solid 3px;
         border-top: transparent solid 3px;
     }
-        
     
-
     main {
         padding: 0;
     }
@@ -625,6 +632,7 @@ body {
     .filters .btns{
         padding: 0;
     }
+    
     .filters {
         display: flex;
         flex-direction: column;
@@ -643,21 +651,17 @@ body {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        
     }
+    
     .filters__btn__title {
         align-self: flex-start;
         flex-grow: 1;
     }
 
-    
-
     .filters__info {
         align-items: baseline;
         padding: 20px 5px;
     }
-
-    
 
     .results {
         display: flex;
