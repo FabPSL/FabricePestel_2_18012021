@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="images/logo/reservia@3x.png" />
+    <link rel="icon" type="image/png" href="./images/logo/logo-reservia3x.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d63c450565.js" crossorigin="anonymous"></script>
@@ -13,10 +13,10 @@
 </head>
 <body>
         <div class="container">
-            <header>
+            <header> <!--css line 6 mobile line 517-->
                 <div class="logo">
                     <img src="./images/logo/logo-reservia.svg" alt="Logo Reservia">
-                    <div class="suscribe_mobile">
+                    <div class="suscribe_mobile"> <!--Suscribe button only visible on mobile version-->
                         <a class="suscribe__mobile__link" href="#">S'inscrire</a>
                     </div>
                 </div>
@@ -25,13 +25,12 @@
                         <li><a href="#">Hébergements</a></li>
                         <li><a href="#">Activités</a></li>
                         <li class="suscribe">
-                            <a class="suscribe__link" href="#">S'inscrire</a>
+                            <a class="suscribe__link" href="#">S'inscrire</a> <!--suscribe button only visible on desktop version-->
                         </li>
                     </ul>
                 </nav>
             </header>
         </div>
-
         <div class="container">
             <main>
                 <div class="intro">
@@ -44,8 +43,8 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </label>
                             <input class="destination" type="text" name="destination" placeholder="Marseille, France">
-                            <button class="submit" type="submit">Rechercher</button>
-                            <button class="submit__mobile" type="submit"><i class="fas fa-search"></i></button>
+                            <button class="submit" type="submit">Rechercher</button> <!--submit button only visible on desktoop version-->
+                            <button class="submit__mobile" type="submit"><i class="fas fa-search"></i></button> <!--submit button only visible on mobile version-->
                         </form>
                         <div class="filters">
                             <div class="filters__btn__title">Filtres</div>
@@ -232,7 +231,5 @@
                 </div>
             </div>
         </footer>
-    
-    
 </body>
 </html>
